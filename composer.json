@@ -1,0 +1,52 @@
+{
+    "name": "inspiredminds/contao-event-image-override",
+    "description": "Allows the image settings of each event in Contao to override the image settings of the event module.",
+    "type": "contao-bundle",
+    "license": "LGPL-3.0-or-later",
+    "homepage": "https://github.com/inspiredminds/contao-event-image-override",
+    "authors": [
+        {
+            "name": "Fritz Michael Gschwantner",
+            "email": "fmg@inspiredminds.at",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/inspiredminds/contao-event-image-override/issues",
+        "source": "https://github.com/inspiredminds/contao-event-image-override",
+        "forum": "https://community.contao.org/de"
+    },
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/fritzmg"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "contao/calendar-bundle": "^4.13 || ^5.0",
+        "contao/core-bundle": "^4.13 || ^5.0",
+        "symfony/config": "^5.4 || ^6.3",
+        "symfony/dependency-injection": "^5.4 || ^6.3",
+        "symfony/http-kernel": "^5.4 || ^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "InspiredMinds\\ContaoEventImageOverride\\": "src/"
+        }
+    },
+    "extra": {
+        "contao-manager-plugin": "InspiredMinds\\ContaoEventImageOverride\\ContaoManager\\Plugin"
+    },
+    "require-dev": {
+        "contao/easy-coding-standard": "^6.0",
+        "contao/rector": "^1.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "contao-components/installer": true,
+            "php-http/discovery": false,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}
